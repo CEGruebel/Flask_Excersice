@@ -1,4 +1,27 @@
 {% block content %}
+<html>
 <h1>Home</h1>
+<body>
+    <h2>Enter an interger: </h2>
+    <form action="/calculate" method="POST">
+        <input type="text" name="number" id="number">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+{% endblock %}
 
+{% block style %}
+<style> 
+    h1 {
+        background-color: lightblue;
+        color: darkgray;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    a {
+        text-align: center;
+    }
+</style>
 {% endblock %}

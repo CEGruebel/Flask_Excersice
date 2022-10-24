@@ -1,6 +1,22 @@
 {% block content %}
-<h1>Register</h1>
-<h4>Enter Student Information below</h4>
+<h1 style="text-align: center">Register</h1>
+<h4 style="text-align: center">Enter Student Information below</h4>
 <!--Form to request user's name-->
+<body style="text-align: center">
+<form action="/addStudentOrganisation" method="POST">
+    <label for="name">Enter your name: </label>
+    <input type="text" id="name" name="name" required>
+    <label for="org">Enter a Student Organization: </label>
+
+    <select name="org"id="org">
+        <option value="Charlotte Hack">Charlotte Hack</option>
+        <option value="Women Who Code">Women Who Code</option>
+        <option value="Code 9">Code 9</option>
+        <option value="Runtime Terror">Runtime Terror</option>
+        <option value="Frontpage Freebirds">Frontpage Freebirds</option>
+    </select>
+    <input type="submit" value="Register"></input>
+</form>
+</body>
 
 {% endblock %}

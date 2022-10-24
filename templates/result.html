@@ -1,5 +1,23 @@
+
 {% block content %}
+    <h1>Form Results</h1>
+    <hr>
+    <p> {{number}} {{message}}</p>
 
+    <a href="http://127.0.0.1:5000">Go Home</a>
+{% endblock %}
 
+{% block style %}
+<style> 
+    h1 {
+        background-color: lightblue;
+        color: darkgray;
+        text-align: center;
+        font-size: 50px;
+    }
 
+    a {
+        text-align: center;
+    }
+</style>
 {% endblock %}

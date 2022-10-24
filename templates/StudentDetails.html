@@ -1,9 +1,19 @@
 {% block content %}
-<h1>Student Details</h1>
-<table>
-    {%for key,value in studentOrganisationDetails.items()%}
-
-    {%endfor%}
-</table>
-
+<html>
+    <h1>Student Details</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Organisation</th>
+        </tr>
+        {%for key,value in studentOrganisationDetails.items()%}
+        <tr>
+            <td>{{key}}</td>
+            <td>{{value}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+    <br>
+    <a href="http://127.0.0.1:5000">Go Home</a>
+</html>
 {% endblock %}
